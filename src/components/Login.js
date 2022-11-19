@@ -1,5 +1,5 @@
 import React,{useRef, useState} from 'react';
-import { Card ,Form ,Button,Alert } from 'react-bootstrap';
+import { Card ,Form ,Button,Alert , Container } from 'react-bootstrap';
 import { useAuth } from '../context/AuthContext';
 import {Link , useNavigate} from 'react-router-dom';
 export default function Login() {
@@ -26,6 +26,8 @@ try{
     
   return (
     <>
+    <Container className = 'd-flex align-items-center justify-content-center' style = {{minHeight:'100vh'}} >
+    <div className="w-100" style={{maxWidth:'600px'}}>
      <Card className = 'p-5'>
         <Card.Body>
 <h2 className='text-left mb-4'>Log in to your account</h2>
@@ -54,6 +56,8 @@ try{
      <div className='w-100 text-center mt-2'>
         Need an account? <Link to = '/signup'>Sign Up</Link>
         </div> 
+        </div>
+        </Container>
     </>
   )
 }

@@ -7,13 +7,12 @@ import {Container} from 'react-bootstrap'
 import AuthProvider from "../context/AuthContext";
 import {BrowserRouter as Router , Routes , Route} from 'react-router-dom';
 import ForgotPassword from "./ForgotPassword";
+import Home from "./Home";
 function App() {
   return (
     
     
-    <Container className = 'd-flex align-items-center justify-content-center' style = {{minHeight:'100vh'}} >
-    <div className="w-100" style={{maxWidth:'600px'}}>
-    <Router>
+   <Router>
     <AuthProvider>
 <Routes>
 <Route
@@ -24,15 +23,13 @@ exact
       <Dashboard />
     </PrivateRoute>
   }></Route>
+  <Route exact path="/" element = {<Home/>}></Route>
   <Route path="/signup" element = {<Signup/>}/>
   <Route path="/login" element = {<Login/>}/>
-  <Route path="/forgot-password" component = {<ForgotPassword/>}/>
+  <Route path="/forgot-password" element = {<ForgotPassword/>}/>
 </Routes>
 </AuthProvider>
       </Router>
-      </div>
-    
-    </Container>
   );
 }
 

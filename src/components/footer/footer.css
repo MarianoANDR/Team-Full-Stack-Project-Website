@@ -11,6 +11,8 @@ a {
 .footer {
     border: 1px solid lightgray;
     display: flex;
+    height: 200px;
+    border-radius: 5px;
 }
 
 .footDiv1 {

@@ -1,0 +1,74 @@
+
+.pDiv {
+    text-align: center;
+    color: white;
+}
+
+.buttonsDiv {
+    text-align: center;
+}
+
+.button1, .button2, .button3 {
+    height: 100px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.greenBox {
+    background-color: turquoise;
+    height: 230px;
+    width: 600px;
+    margin-left: 320px;
+    margin-top: 20px;
+   
+}
+
+.green1, .green2, .green3 {
+    height: 100px;
+    width:180px;
+    background-color: transparent;
+    
+    
+}
+
+.h3green{
+    padding-left: 250px;
+    padding-top: 10px;
+    color: white;
+    height: 20px;
+}
+
+.section2 {
+    font-family: Lato,Helvetica Neue,sans-serif;
+}
+
+.section2h2 {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.section2Par {
+    text-align: center;
+}
+
+.section2h3 {
+    text-align: center;
+    font-size: 23px;
+    padding-top: 30px;
+
+}
+
+.section2 {
+    height: 450px;
+    background-color: lightgrey;
+    margin: 200px 0;
+    border-radius: 5px;
+}
+
+.subGreen {
+    height:150px;
+    display: flex;
+    padding: 0 30px 0;
+
+}
+

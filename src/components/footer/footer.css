@@ -1,0 +1,37 @@
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer {
+    border: 1px solid lightgray;
+    display: flex;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.footDiv1 {
+    font-family: Lato,Helvetica Neue,sans-serif;
+    font-size: 16px;
+    height: 100px;
+    width: 300px;
+    padding: 50px 365px 50px 0; 
+}
+
+.footDiv2, .footDiv3, .footDiv4, .footDiv5 {
+    width: 150px;  
+    padding: 50px 0;
+
+}
+
+
+
+
+
+ 
+

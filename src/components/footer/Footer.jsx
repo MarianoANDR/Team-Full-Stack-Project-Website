@@ -6,8 +6,7 @@ const Footer = () => {
         
          <footer className='footer'>
         <div className = 'footDiv1'>
-            <a href='/'><img alt='COMPANY LOGO'></img></a>
-            <br></br> 
+            <a href='/'><img alt='COMPANY LOGO'></img></a> 
             <span>Helping Hand</span>
             <p>Helping Hand is a 501c3 nonprofit</p>
         </div>   

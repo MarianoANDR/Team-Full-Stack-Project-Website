@@ -20,7 +20,8 @@ const Section1 = () => {
                 <div className='div2b'>
                 <a href='/'>
                 <span className='span'>Receive Food</span>
-                <img src='.\src\images\images section1\arrow.png' alt='black arrow'></img></a>
+                <i class="fa-solid fa-arrow-right"></i>
+</a>
                 <p className='par'>NonProfit</p></div>
             </div>
         </div>

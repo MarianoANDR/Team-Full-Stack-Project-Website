@@ -5,13 +5,15 @@
 }
 
 .buttonsDiv {
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .button1, .button2, .button3 {
     height: 100px;
     width: 200px;
     margin-right: 10px;
+    margin-left: 10px;
 }
 
 .greenBox {

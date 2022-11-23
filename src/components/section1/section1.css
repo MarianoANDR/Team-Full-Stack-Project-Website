@@ -1,0 +1,47 @@
+
+
+.div1 {
+    background-color: lightgrey;
+    width: 50%;
+    margin-bottom: 55px;
+    border-radius: 5px;
+}    
+
+.div2 {
+    background-color: 	#87CEFA;
+    width: 50%;
+    margin-top: 55px;
+    border-radius: 5px;
+}
+
+.div2a {
+    padding-left: 70px;
+}
+
+.div2b {
+    padding-left: 70px;
+}
+
+.divAb {
+    margin: 50px 0;
+}
+
+.div1a {
+    margin: 80px 0 0 200px;
+    font-size: 20px;
+}
+
+
+.sectionDiv {
+    display: flex;
+    margin: 50px 0;
+    font-family: Lato,Helvetica Neue,sans-serif; 
+}
+
+.span {
+    font-size: 32px;
+    font-style: bold;
+}
+
+
+

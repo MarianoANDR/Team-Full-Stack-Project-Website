@@ -1,3 +1,4 @@
+
 import Signup from "./Signup"
 import Dashboard from "./Dashboard";
 import Login from "./Login";
@@ -11,7 +12,7 @@ import Home from "./Home";
 function App() {
   return (
     
-    
+    <>
    <Router>
     <AuthProvider>
 <Routes>
@@ -30,6 +31,8 @@ exact
 </Routes>
 </AuthProvider>
       </Router>
+
+        </>
   );
 }
 

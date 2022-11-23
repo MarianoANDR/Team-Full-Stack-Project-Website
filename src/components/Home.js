@@ -1,4 +1,7 @@
 import React from 'react'
+import Footer from "./footer/Footer";
+import Section1 from "./section1/Section1";
+import Section2 from "./section2/Section2";
 import { Nav,Navbar,Container } from 'react-bootstrap';
 import {Link , useNavigate} from 'react-router-dom'
 
@@ -22,7 +25,11 @@ export default function Home() {
           </Nav>
         </Container>
       </Navbar>
+      <Section2 />
 
+<Section1/>
+
+<Footer/>
     </>
   )
 }

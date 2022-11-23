@@ -1,12 +1,12 @@
 import './section1.css'
-
+import { Link } from 'react-router-dom';
 const Section1 = () => {
     return(
         <div className='sectionDiv'>
             <div className='div1'>
             <div className="div1a">
             <h2 className='h2'>Create a World that doesn't expire</h2>
-            <p>Sign up Today</p>
+            <p><Link>Sign Up</Link>  Today</p>
             </div>
             </div>
             
@@ -20,7 +20,8 @@ const Section1 = () => {
                 <div className='div2b'>
                 <a href='/'>
                 <span className='span'>Receive Food</span>
-                <img src='.\src\images\images section1\arrow.png' alt='black arrow'></img></a>
+                <i class="fa-solid fa-arrow-right"></i>
+</a>
                 <p className='par'>NonProfit</p></div>
             </div>
         </div>

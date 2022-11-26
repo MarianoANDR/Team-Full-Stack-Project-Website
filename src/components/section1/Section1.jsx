@@ -20,7 +20,7 @@ const Section1 = () => {
                 <div className='div2b'>
                 <a href='/'>
                 <span className='span'>Receive Food</span>
-                <i class="fa-solid fa-arrow-right"></i>
+                <i className="fa-solid fa-arrow-right"></i>
 </a>
                 <p className='par'>NonProfit</p></div>
             </div>

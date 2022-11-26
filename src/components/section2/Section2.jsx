@@ -1,20 +1,52 @@
+import { useState } from 'react';
 import './section2.css'
 
 const Section2 = () => {
+
+    const [text, setText] = useState('1.1M');
+    const [text2, setText2] = useState('3.3k');
+    const [text3, setText3] = useState('8.2k');
+    const [Isactive, setIsActive] = useState(false);
+
+    const handleClick = (e) => {
+        if(Isactive === true) {
+        e.target.style.backgroundColor = 'lightgreen';
+    }}
+
     return(
         <div className="section2">
             <h2 className='section2h2'>What Impact can you make?</h2>
             <p className='section2Par'>Our unique calculator shows the benefits your company can receive by using Replate.</p>
             <h3 className='section2h3'>Pounds Donated</h3>
             <div className='buttonsDiv'>
-                <button type='button' className='button1'>
-                    <p>hey</p>
+                <button onClick={(e) => {
+                    setText('27.3k');
+                    setText2('84');
+                    setText3('205');
+                    setIsActive(true)                  
+                    handleClick(e)
+                }}className='button1'>
+                    <p>100 lbs</p>
+                    <p>Leftovers after an event</p>
+                   
                 </button>
-                <button type='button' className='button2'>
-                <p>hey</p>
+                <button type='button' className='button2' onClick={(e) => {
+                    setText('1.1M');
+                    setText2('3.3k');
+                    setText3('8.2k');
+                    handleClick(e)
+                }}>
+                <p>4000 lbs</p>
+                <p>Avg monthly donation</p>
                 </button>
-                <button type='button' className='button3'>
-                <p>hey</p>
+                <button type='button' className='button3' onClick={(e) => {
+                    setText('5.5M');
+                    setText2('16.7k');
+                    setText3('41k');
+                    handleClick(e)                    
+                }}>
+                <p>20000 lbs</p>
+                <p>Avg yearly donation</p>
                 </button> 
             </div>
             <div className='review1'>
@@ -23,19 +55,19 @@ const Section2 = () => {
 
             <div className='subGreen'>
                 <div className='green1'>
-                    <p className='pDiv'>1.1M</p>
-                    <p className='pDiv'>Press1</p>
+                    <p className='pDiv'>(Icon)</p>
+                    <p className='pDiv'>{text}</p>
                     <p className='pDiv'>gal of water saved</p>
                 </div>
                 <div className='green2'>
-                <p className='pDiv'>1.1M</p>
-                <p className='pDiv'>Press1</p>
-                <p className='pDiv'>gal of water saved</p>
+                <p className='pDiv'>(Icon)</p>
+                <p className='pDiv'>{text2}</p>
+                <p className='pDiv'>meals served</p>
                 </div>
                 <div className='green3'>
-                <p className='pDiv'>1.1M</p>
-                <p className='pDiv'>Press1</p>
-                <p className='pDiv'>gal of water saved</p>
+                <p className='pDiv'>(Icon)</p>
+                <p className='pDiv'>{text3}</p>
+                <p className='pDiv'>pounds CO2 diverted</p>
                 </div>
             </div>
             </div>

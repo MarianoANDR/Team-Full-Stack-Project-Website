@@ -31,6 +31,12 @@
     font-size: 20px;
 }
 
+.imageArrow {
+    width: 50px;
+    height:50px;
+   
+}
+
 
 .sectionDiv {
     display: flex;
@@ -38,9 +44,17 @@
     font-family: Lato,Helvetica Neue,sans-serif; 
 }
 
-.span {
+.spanDonate, .spanReceive {
     font-size: 32px;
     font-style: bold;
+}
+
+.spanReceive {
+    padding-right: 5px;
+}
+
+.spanDonate {
+    padding-right: 18px;
 }
 
 

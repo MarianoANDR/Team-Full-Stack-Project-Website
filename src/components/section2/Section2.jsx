@@ -1,17 +1,18 @@
 import { useState } from 'react';
 import './section2.css'
 
+
 const Section2 = () => {
 
     const [text, setText] = useState('1.1M');
     const [text2, setText2] = useState('3.3k');
     const [text3, setText3] = useState('8.2k');
-    const [Isactive, setIsActive] = useState(false);
+  
 
     const handleClick = (e) => {
-        if(Isactive === true) {
-        e.target.style.backgroundColor = 'lightgreen';
-    }}
+        
+        e.target.style.backgroundColor = 'turquoise';
+    }
 
     return(
         <div className="section2">
@@ -19,11 +20,11 @@ const Section2 = () => {
             <p className='section2Par'>Our unique calculator shows the benefits your company can receive by using Replate.</p>
             <h3 className='section2h3'>Pounds Donated</h3>
             <div className='buttonsDiv'>
+                
                 <button onClick={(e) => {
                     setText('27.3k');
                     setText2('84');
-                    setText3('205');
-                    setIsActive(true)                  
+                    setText3('205');         
                     handleClick(e)
                 }}className='button1'>
                     <p>100 lbs</p>
@@ -33,8 +34,9 @@ const Section2 = () => {
                 <button type='button' className='button2' onClick={(e) => {
                     setText('1.1M');
                     setText2('3.3k');
-                    setText3('8.2k');
+                    setText3('8.2k'); 
                     handleClick(e)
+
                 }}>
                 <p>4000 lbs</p>
                 <p>Avg monthly donation</p>
@@ -43,7 +45,8 @@ const Section2 = () => {
                     setText('5.5M');
                     setText2('16.7k');
                     setText3('41k');
-                    handleClick(e)                    
+                    handleClick(e)
+                                     
                 }}>
                 <p>20000 lbs</p>
                 <p>Avg yearly donation</p>

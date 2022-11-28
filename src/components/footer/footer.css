@@ -89,9 +89,6 @@ a {
 .titles{
     display: flex;
 }
-.footDiv2, .footDiv3, .footDiv4, .footDiv5 {
-
-}
 @media screen  and (max-width:600px){
     
    .footer {

@@ -1,4 +1,5 @@
 import './footer.css';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 
 const Footer = () => {
    
@@ -6,10 +7,10 @@ const Footer = () => {
         
          <footer className='footer'>
         <div className = 'footDiv1'>
-            <a href='/'><img alt='COMPANY LOGO'></img></a> 
             <span>Helping Hand</span>
             <p>Helping Hand is a 501c3 nonprofit</p>
-        </div>   
+        </div> 
+        <div className='links'>  
         <div className='footDiv2'>
         <ul>
             <li><a href='/'>Link</a></li>
@@ -31,12 +32,16 @@ const Footer = () => {
             <li><a href='/'>Link</a></li>
         </ul>
         </div>
+        </div>
         <div className='footDiv5'>
         <ul>
-        <li><a href='/'><img alt='facebook logo'></img></a></li>
-        <li><a href='/'><img alt='instagram logo'></img></a></li>
-        <li><a href='/'><img alt='linkedin logo'></img></a></li>
-        <li><a href='/'><img alt='twitter logo'></img></a></li>
+        <FontAwesomeIcon icon="fa-brands fa-linkedin" size='2x' className='brand' />
+
+        <FontAwesomeIcon icon="fa-brands fa-twitter" size='2x' className='brand'/>
+
+        <FontAwesomeIcon icon="fa-brands fa-facebook" size='2x'className='brand'/>
+        <FontAwesomeIcon icon="fa-brands fa-instagram"size='2x' className='brand'/>
+
             
         </ul>
         </div>

@@ -9,6 +9,7 @@ import AuthProvider from "../context/AuthContext";
 import {BrowserRouter as Router , Routes , Route} from 'react-router-dom';
 import ForgotPassword from "./ForgotPassword";
 import Home from "./Home";
+import './fontawesome/Fontawesome'
 function App() {
   return (
     

@@ -33,10 +33,10 @@ const Footer = () => {
         </div>
         <div className='footDiv5'>
         <ul>
-        <li><a href='/'><img className='faceLogo' src='https://t4.ftcdn.net/jpg/03/16/95/93/360_F_316959354_x4fl2wlOmwyaCUQAkmDqCBwHtLSHsUTg.jpg' alt='facebook logo'></img></a></li>
-        <li><a href='/'><img className='instLogo' src='https://img.freepik.com/free-vector/instagram-icon_1057-2227.jpg' alt='instagram logo'></img></a></li>
-        <li><a href='/'><img className='linkLogo' src='https://cdn-icons-png.flaticon.com/512/174/174857.png' alt='linkedin logo'></img></a></li>
-        <li><a href='/'><img className='twitLogo' src='https://cdn-icons-png.flaticon.com/512/124/124021.png' alt='twitter logo'></img></a></li>
+        <li><a href='www.facebook.com'><img className='faceLogo' src='https://t4.ftcdn.net/jpg/03/16/95/93/360_F_316959354_x4fl2wlOmwyaCUQAkmDqCBwHtLSHsUTg.jpg' alt='facebook logo'></img></a></li>
+        <li><a href='www.instagram.com'><img className='instLogo' src='https://img.freepik.com/free-vector/instagram-icon_1057-2227.jpg' alt='instagram logo'></img></a></li>
+        <li><a href='www.linkedin.com'><img className='linkLogo' src='https://cdn-icons-png.flaticon.com/512/174/174857.png' alt='linkedin logo'></img></a></li>
+        <li><a href='www.twitter.com'><img className='twitLogo' src='https://cdn-icons-png.flaticon.com/512/124/124021.png' alt='twitter logo'></img></a></li>
             
         </ul>
         </div>

@@ -9,10 +9,12 @@ const Section2 = () => {
     const [text3, setText3] = useState('8.2k');
   
 
-    const handleClick = (e) => {
+    // const handleClick = (e) => {
         
-        e.target.style.backgroundColor = 'turquoise';
-    }
+    //     e.target.style.backgroundColor = 'turquoise';
+    // }
+
+        
 
     return(
         <div className="section2">
@@ -22,30 +24,43 @@ const Section2 = () => {
             <div className='buttonsDiv'>
                 
                 <button onClick={(e) => {
+                    document.getElementById('b1').style.backgroundColor = 'turquoise';
+                    document.getElementById('b2').style.backgroundColor = '';
+                    document.getElementById('b3').style.backgroundColor = '';
                     setText('27.3k');
                     setText2('84');
                     setText3('205');         
-                    handleClick(e)
-                }}className='button1'>
+                    // handleClick(e)
+                }}className='button1' id= 'b1'>
                     <p>100 lbs</p>
                     <p>Leftovers after an event</p>
                    
                 </button>
-                <button type='button' className='button2' onClick={(e) => {
+                <button type='button' className='button2' id='b2' onClick={(e) => {
+                document.getElementById('b2').style.backgroundColor = 'turquoise';
+                document.getElementById('b1').style.backgroundColor = '';
+                document.getElementById('b3').style.backgroundColor = '';
+
+
                     setText('1.1M');
                     setText2('3.3k');
                     setText3('8.2k'); 
-                    handleClick(e)
+                    // handleClick(e)
 
                 }}>
                 <p>4000 lbs</p>
                 <p>Avg monthly donation</p>
                 </button>
-                <button type='button' className='button3' onClick={(e) => {
+                <button type='button' className='button3' id='b3' onClick={(e) => {
+                 document.getElementById('b3').style.backgroundColor = 'turquoise';
+                 document.getElementById('b1').style.backgroundColor = '';
+                 document.getElementById('b2').style.backgroundColor = '';
+
+
                     setText('5.5M');
                     setText2('16.7k');
                     setText3('41k');
-                    handleClick(e)
+                    // handleClick(e)
                                      
                 }}>
                 <p>20000 lbs</p>

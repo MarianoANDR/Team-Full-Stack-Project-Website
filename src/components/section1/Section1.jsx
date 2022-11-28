@@ -1,5 +1,7 @@
 import './section1.css'
 import { Link } from 'react-router-dom';
+
+
 const Section1 = () => {
     return(
         <div className='sectionDiv'>
@@ -14,14 +16,17 @@ const Section1 = () => {
                 <div className="divAb">
                 <div className='div2a'>
                 <a href='/'>
-                <span className='span'>Donate Food</span>
-                <img src='.\src\images\images section1\arrow.png' alt='black arrow'></img></a>
+                <span className='spanDonate'>Donate Food</span>
+                
+                <img className='imageArrow' src='https://www.di-da.eus/wp-content/uploads/2018/07/arrow-icon-28.png' alt='arrow'></img></a>
+                
                 <p className='par'>Business</p></div>
                 <div className='div2b'>
                 <a href='/'>
-                <span className='span'>Receive Food</span>
-                <i class="fa-solid fa-arrow-right"></i>
-</a>
+                <span className='spanReceive'>Receive Food</span>
+                <img className='imageArrow' src='https://www.di-da.eus/wp-content/uploads/2018/07/arrow-icon-28.png' alt='arrow'></img></a>
+                <i className="fa-solid fa-arrow-right"></i>
+
                 <p className='par'>NonProfit</p></div>
             </div>
         </div>

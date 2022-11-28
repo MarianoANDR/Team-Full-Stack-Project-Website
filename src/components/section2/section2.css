@@ -20,7 +20,6 @@
     background-color: turquoise;
     height: 230px;
     width: 600px;
-    margin-left: 320px;
     margin-top: 20px;
    
 }
@@ -34,10 +33,11 @@
 }
 
 .h3green{
-    padding-left: 250px;
     padding-top: 10px;
     color: white;
-    height: 20px;
+        display: flex;
+        justify-content: center;
+    
 }
 
 .section2 {
@@ -74,3 +74,22 @@
 
 }
 
+.review1{
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width: 600px) {
+    .greenBox{
+        width: 100%;
+    }
+    
+}
+@media (min-width: 576px){
+.navbar-expand-sm .offcanvas .offcanvas-body {
+    display: flex;
+    flex-grow: 0;
+    padding: 0;
+    overflow-y: visible;
+    align-items: center;
+}
+}

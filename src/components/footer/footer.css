@@ -1,9 +1,20 @@
 .act1{
     color: green;
 }
+.dropdown-menu{
+min-width: 50px;
+}
+body{
+    background-color: #0064B5;
+}
 ul {
     list-style: none;
     padding: 0;
+}
+.color{
+    background-color: rgba(34,176,129,0.1);
+    margin-left: 10%;
+    transition: 0.6s;
 }
 .links{
     display: flex;
@@ -13,8 +24,10 @@ ul {
 .crd {
     display: flex;
     flex-direction: row;
-
-
+}
+.bt a{
+    padding: 0px;
+    color: #fff;
 }
 .active1{
     color: green;
@@ -95,8 +108,18 @@ a {
         flex-direction: column;
         height: auto;
     }
+    .crd{
+        flex-direction: column;
+    }
+
     .titles{
         flex-direction: row;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    }
+    .crd2{
+padding: 2%;
     }
     .join-now{
         display: flex;
@@ -134,6 +157,9 @@ padding: 2%;
     width: 100%;
     height: 100%;
 }
+.color{
+    margin: 0;
+}
 }
 
 main{
@@ -159,10 +185,24 @@ main section {
 .join-now .icon{
     padding-left: 2%;
 }
-.join-now .icon:hover{
+.join-now:hover .icon{
     padding-left: 4%;
     color: green;
 }
+.blue{
+    color: #0064B5;
+}
+.green{
+    color: green;
+}
 
- 
-
+@media (min-width: 576px){
+.navbar-expand-sm .navbar-nav {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}
+}
+.dropdown-toggle::after{
+    content: none!important;
+}

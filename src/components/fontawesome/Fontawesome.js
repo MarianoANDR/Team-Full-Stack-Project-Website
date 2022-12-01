@@ -1,5 +1,5 @@
 import { library } from '@fortawesome/fontawesome-svg-core'
-import {faArrowRight,faLocationDot,faEarthAmerica,faNewspaper  } from '@fortawesome/free-solid-svg-icons'
+import {faIndustry,faArrowRight,faLocationDot,faEarthAmerica,faNewspaper , faDroplet , faUtensils} from '@fortawesome/free-solid-svg-icons'
 import {} from '@fortawesome/free-regular-svg-icons'
 import { faTwitter ,faInstagram , faLinkedin , faFacebook } from '@fortawesome/free-brands-svg-icons'
-library.add(faArrowRight,faTwitter, faInstagram,faLinkedin,faFacebook,faNewspaper,faLocationDot,faEarthAmerica);
+library.add( faIndustry,faUtensils, faDroplet,faArrowRight,faTwitter, faInstagram,faLinkedin,faFacebook,faNewspaper,faLocationDot,faEarthAmerica);

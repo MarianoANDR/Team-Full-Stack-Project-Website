@@ -10,6 +10,7 @@ import {BrowserRouter as Router , Routes , Route} from 'react-router-dom';
 import ForgotPassword from "./ForgotPassword";
 import Home from "./Home";
 import './fontawesome/Fontawesome'
+import Post from "./Post";
 function App() {
   return (
     
@@ -18,11 +19,15 @@ function App() {
     <AuthProvider>
 <Routes>
 <Route
-exact
   path="/dashboard"
   element={
     <PrivateRoute>
       <Dashboard />
+    </PrivateRoute>
+  }></Route>
+  <Route path="/post" element = {
+  <PrivateRoute>
+    <Post/>
     </PrivateRoute>
   }></Route>
   <Route exact path="/" element = {<Home/>}></Route>

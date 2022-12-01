@@ -5,19 +5,22 @@ export default function Card() {
     const [info,setinfo] = useState(<Information/>)
   return (
     <>
-    <div className='crd'>
+    <div className='crd '>
     <div className='titles'>
-        <p className='act1' id='act1' onClick={ () =>{
+        <p style={{cursor:'pointer'}} className='act1' id='act1' onClick={ () =>{
             setinfo(<Information/>);
             document.getElementById('act1').style.color = "green";
             document.getElementById('act2').style.color = "black";
+            document.getElementById('color').style.background = 'rgba(34,176,129,0.1)';
+
 
             
         }}>For Buisness</p>
-        <p className = 'act2' id='act2' onClick={ () => {
+        <p style={{cursor:'pointer'}} className = 'act2' id='act2' onClick={ () => {
             setinfo(<Info/>);
             document.getElementById('act1').style.color = "black";
-            document.getElementById('act2').style.color = "blue";
+            document.getElementById('act2').style.color = "#0064B5";
+            document.getElementById('color').style.background = 'rgba(0,100,181,0.1)';
             
         }}>For NonProfits</p>
     </div>

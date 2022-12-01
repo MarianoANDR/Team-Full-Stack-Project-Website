@@ -8,40 +8,53 @@
     display: flex;
     justify-content: center;
 }
+.text{
+    font-size: 26px;
+    font-weight: 700;
+}
+.subtext{
+    font-size: 18px;
+}
 
 .button1, .button2, .button3 {
     height: 100px;
     width: 200px;
     margin-right: 10px;
     margin-left: 10px;
+    border-radius: 5px;
+    border: 2px solid #9a9d9c;
+    background:  #f8f8f8;
+
 }
 
 .greenBox {
-    background-color: turquoise;
-    height: 230px;
-    width: 600px;
+    background: linear-gradient(120deg, #21ca8a 0%, #31ab98 100%);
+    border-radius: 5px;
+
+    width: 724px;
     margin-top: 20px;
-   
+    padding: 30px;
 }
 
+
 .green1, .green2, .green3 {
-    height: 100px;
-    width:180px;
     background-color: transparent;
-    
+    flex: 0 0 auto;
+    width: 33.33333333%;
     
 }
 
 .h3green{
-    padding-top: 10px;
+    margin-bottom: 1.5rem!important;
     color: white;
         display: flex;
         justify-content: center;
-    
+    font-size: 1.2rem;
 }
 
 .section2 {
     font-family: Lato,Helvetica Neue,sans-serif;
+    background: linear-gradient(to bottom, #f8f8f8, #f8f8f8 75%, white 25%, white);
 }
 
 .section2h2 {
@@ -62,16 +75,16 @@
 
 .section2 {
     height: 450px;
-    background-color: lightgrey;
     margin: 200px 0;
     border-radius: 5px;
 }
 
 .subGreen {
-    height:150px;
+    --bs-gutter-x: 1rem;
+    --bs-gutter-y: 0;
     display: flex;
-    padding: 0 30px 0;
-
+    margin-right: calc(var(--bs-gutter-x)*-0.5);
+    margin-left: calc(var(--bs-gutter-x)*-0.5);
 }
 
 .review1{
@@ -81,6 +94,9 @@
 @media screen and (max-width: 600px) {
     .greenBox{
         width: 100%;
+    }
+    .section2{
+        margin-top: 2px;
     }
     
 }
@@ -92,4 +108,15 @@
     overflow-y: visible;
     align-items: center;
 }
+}
+.b1 span , .b2 span, .b3 span{
+    font-size: 16px;
+    font-weight: 800px;
+}
+.active span{
+    color: #31ab98;
+}
+.active{
+    border: 2px solid #31ab98;
+background: #ffff;
 }

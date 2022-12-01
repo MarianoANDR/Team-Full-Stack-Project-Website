@@ -48,15 +48,15 @@ function OffcanvasExample() {
         <a href="https://storyset.com/people"><img className='dis' src= {pic}></img></a>
         
             <div className='join-now'>
-            <p><a>Join Now</a> to donate or recieve</p>
-            <FontAwesomeIcon icon= 'arrow-right' size='2x' className='icon' />
+            <Button >Subscribe</Button>
+            
 </div>
         </section>
         <section className='section1'>
         <a href="https://storyset.com/people"><img src= {pic}></img></a>
         </section>
     </main>
-    <section className='work'>
+    <section className='work color' id='color'>
       <div className='heading'>
       <h2>How Replate Works</h2>
       <p>

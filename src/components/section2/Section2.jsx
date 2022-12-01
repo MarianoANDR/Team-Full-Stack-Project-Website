@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './section2.css'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 
 
 const Section2 = () => {
@@ -24,37 +25,36 @@ const Section2 = () => {
             <div className='buttonsDiv'>
                 
                 <button onClick={(e) => {
-                    document.getElementById('b1').style.backgroundColor = 'turquoise';
-                    document.getElementById('b2').style.backgroundColor = '';
-                    document.getElementById('b3').style.backgroundColor = '';
+                    //document.getElementById('b1').style.backgroundColor = 'turquoise';
+                    document.getElementById('b2').classList.remove('active');
+                    document.getElementById('b3').classList.remove('active');
+                    document.getElementById('b1').classList.add('active');
                     setText('27.3k');
                     setText2('84');
                     setText3('205');         
                     // handleClick(e)
                 }}className='button1' id= 'b1'>
-                    <p>100 lbs</p>
+                    <span>100 lbs</span>
                     <p>Leftovers after an event</p>
                    
                 </button>
                 <button type='button' className='button2' id='b2' onClick={(e) => {
-                document.getElementById('b2').style.backgroundColor = 'turquoise';
-                document.getElementById('b1').style.backgroundColor = '';
-                document.getElementById('b3').style.backgroundColor = '';
-
-
+                                    document.getElementById('b1').classList.remove('active');
+                                    document.getElementById('b3').classList.remove('active');
+                                    document.getElementById('b2').classList.add('active');
                     setText('1.1M');
                     setText2('3.3k');
                     setText3('8.2k'); 
                     // handleClick(e)
 
                 }}>
-                <p>4000 lbs</p>
+                <span>4000 lbs</span>
                 <p>Avg monthly donation</p>
                 </button>
                 <button type='button' className='button3' id='b3' onClick={(e) => {
-                 document.getElementById('b3').style.backgroundColor = 'turquoise';
-                 document.getElementById('b1').style.backgroundColor = '';
-                 document.getElementById('b2').style.backgroundColor = '';
+                  document.getElementById('b1').classList.remove('active');
+                  document.getElementById('b2').classList.remove('active');
+                  document.getElementById('b3').classList.add('active');
 
 
                     setText('5.5M');
@@ -63,7 +63,7 @@ const Section2 = () => {
                     // handleClick(e)
                                      
                 }}>
-                <p>20000 lbs</p>
+                <span>20000 lbs</span>
                 <p>Avg yearly donation</p>
                 </button> 
             </div>
@@ -73,19 +73,19 @@ const Section2 = () => {
 
             <div className='subGreen'>
                 <div className='green1'>
-                    <p className='pDiv'>(Icon)</p>
-                    <p className='pDiv'>{text}</p>
-                    <p className='pDiv'>gal of water saved</p>
+                    <p className='pDiv'><FontAwesomeIcon icon='droplet' size = '2x'/></p>
+                    <p className='pDiv text'>{text}</p>
+                    <p className='pDiv subtext'>gal of water saved</p>
                 </div>
                 <div className='green2'>
-                <p className='pDiv'>(Icon)</p>
-                <p className='pDiv'>{text2}</p>
-                <p className='pDiv'>meals served</p>
+                <p className='pDiv'><FontAwesomeIcon icon='utensils' size = '2x'/></p>
+                <p className='pDiv text'>{text2}</p>
+                <p className='pDiv subtext'>meals served</p>
                 </div>
                 <div className='green3'>
-                <p className='pDiv'>(Icon)</p>
-                <p className='pDiv'>{text3}</p>
-                <p className='pDiv'>pounds CO2 diverted</p>
+                <p className='pDiv'><FontAwesomeIcon icon='industry' size = '2x'/></p>
+                <p className='pDiv text'>{text3}</p>
+                <p className='pDiv subtext'>pounds CO2 diverted</p>
                 </div>
             </div>
             </div>

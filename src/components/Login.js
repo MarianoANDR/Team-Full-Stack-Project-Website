@@ -17,7 +17,7 @@ try{
     setError('');
     setLoading(true);
         await login(emailRef.current.value, passwordRef.current.value);
-        history.push('/')
+        history('/dashboard')
     } catch{
         setError('Failed to Log IN')
     }

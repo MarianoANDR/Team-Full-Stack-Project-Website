@@ -1,8 +1,18 @@
+.shows{
+    display: none!important;
+}
+.textarea{
+    background-color: #000;
+    color: #fff;
+}
+.bt{
+    margin: 2%;
+}
 .act1{
     color: green;
 }
 .dropdown-menu{
-min-width: 50px;
+min-width: auto!important;
 }
 body{
     background-color: #0064B5;
@@ -99,11 +109,13 @@ a {
 .heading p{
     text-align: center;
 }
-.titles{
-    display: flex;
-}
 @media screen  and (max-width:600px){
-    
+    .show{
+        display: block!important;
+    }
+    .nav-item.dropdown{
+        display: block!important;
+    }
    .footer {
         flex-direction: column;
         height: auto;

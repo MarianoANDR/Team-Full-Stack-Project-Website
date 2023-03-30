@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Information from './Information'
 import Info from './Info'
+
 export default function Card() {
     const [info,setinfo] = useState(<Information/>)
   return (

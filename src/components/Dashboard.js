@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { Card ,Form ,Button,Alert } from 'react-bootstrap';
 import { useAuth } from '../context/AuthContext';
-import {Link , useNavigate} from 'react-router-dom';
-import Loginnav from './Loginnav'
+import { useNavigate} from 'react-router-dom';
+import Loginnav from './Loginnav';
+import Footer from './footer/Footer'
+import Postdisplay from './Postdisplay';
 export default function Dashboard() {
 const [error,setError] = useState('');
 const { currentUser,logout} = useAuth();
@@ -21,7 +22,9 @@ const history = useNavigate();
 }
   return (
     <>
-     <Loginnav/> 
+     <Loginnav logout = {handleLogout}/> 
+     <Postdisplay/>
+     <Footer/>
     </>
   )
 }
